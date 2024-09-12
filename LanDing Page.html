@@ -21,9 +21,17 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        /* Container for Logo and Image */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 50%;
+        }
+
         /* Styling for Logo */
         nav .logo {
-            flex: 1;
+            margin-right: 20px;
         }
 
         nav img {
@@ -33,7 +41,7 @@
 
         /* Styling for Navigation Links */
         nav .nav-links {
-            flex: 2;
+            flex: 1;
             display: flex;
             justify-content: flex-end; /* Align links to the right */
             align-items: center;
@@ -54,7 +62,18 @@
             color: black; /* Change text color on hover */
         }
 
+        /* Container for main image on the left */
+        .main-image {
+            width: 50%; /* Image takes left half */
+            height: auto;
+            display: block;
+        }
+
+        /* Flexbox layout for image and navigation */
         .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 20px;
             text-align: center;
         }
@@ -62,9 +81,12 @@
 </head>
 <body>
     <nav>
-        <!-- Logo on the left side -->
-        <div class="logo">
-            <img src="E:\VS CODE\Poultry\1.png" alt="Logo"> <!-- Ensure the image path is correct -->
+        <!-- Container with Logo and Image -->
+        <div class="logo-container">
+            <div class="logo">
+                <img src="E:\VS CODE\Poultry\1.png" alt="Logo"> <!-- Ensure the image path is correct -->
+            </div>
+            
         </div>
 
         <!-- Navigation Links on the right side -->
@@ -72,12 +94,14 @@
             <a href="#home">Home</a>
             <a href="#Why jeeva eggs">Why Jeeva Eggs</a>
             <a href="#Benefits">Benefits</a>
-            <a href="#Where to By">Where to Buy</a>
+            <a href="#Where to Buy">Where to Buy</a>
             <a href="#FQA">FQA</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
-
+    <div>
+        <img src="E:\VS CODE\Poultry\2.png" alt="Main Image" class="main-image"> <!-- Ensure the image path is correct -->
+    </div>
     <div class="container">
         <!-- Main content goes here -->
     </div>
